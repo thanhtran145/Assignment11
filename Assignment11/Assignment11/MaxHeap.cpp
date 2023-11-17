@@ -12,7 +12,7 @@ MaxHeap<T>::MaxHeap()
 // Precondition: an non-empty array
 // Postcondition: create a heap base on the array
 template<class T>
-MaxHeap<T>::MaxHeap(const vector<T>& array): Heap(array)
+MaxHeap<T>::MaxHeap(const vector<T>& array) : Heap(array)
 {
 	make_heap(Heap.begin(), Heap.end());
 }
@@ -60,7 +60,7 @@ void MaxHeap<T>::pushHeap(const T& value)
 	Heap.push_back(value);
 	push_heap(Heap.begin(), Heap.end());
 }
-	
+
 //Precondition: the heap has to be not empty
 //Postcondition: display the heap
 template <class T>
@@ -85,15 +85,33 @@ bool MaxHeap<T>::search(const T& Item)
 			return true;
 		}
 	}
-	 
+
 	return false;
 }
+
+//Precondition: NA
+//Postcondition: sort the heap
+template <class T>
+void MaxHeap<T>::sort()
+{
+	make_heap(Heap.begin(), Heap.end());
+	sort_heap(Heap.begin(), Heap.end());
+}
+
+//Precondition: NA
+//Postcondition: return true if a vector is a heap, otherwise return false
+template <class T>
+bool MaxHeap<T>::isHeap(const vector<T>&array)
+{
+	return is_heap(array.begin(), array.end());
+}
+
 
 //****************************** Overload Operator ****************************//
 //Precondition: a MaxHeap object
 //Postcondition: return true if this object is smaller than the parameter else return false
 template <class T>
-bool MaxHeap<T>::operator<(MaxHeap<T> obj) 
+bool MaxHeap<T>::operator<(MaxHeap<T> obj)
 {
 	return Heap.size() < obj.getSize();
 }

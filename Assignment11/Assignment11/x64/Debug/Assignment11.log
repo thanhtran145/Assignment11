@@ -1,10 +1,2 @@
-﻿  main.cpp
-C:\Users\thanh\OneDrive - Rancho Santiago Community College District\Desktop\CMPR131\Assignment11\Assignment11\MaxHeap.cpp(27,18): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\thanh\OneDrive - Rancho Santiago Community College District\Desktop\CMPR131\Assignment11\Assignment11\MaxHeap.cpp(26,1): message : while compiling class template member function 'int MaxHeap<int>::getSize(void)'
-C:\Users\thanh\OneDrive - Rancho Santiago Community College District\Desktop\CMPR131\Assignment11\Assignment11\main.cpp(111,72): message : see the first reference to 'MaxHeap<int>::getSize' in 'Max_Heap'
-C:\Users\thanh\OneDrive - Rancho Santiago Community College District\Desktop\CMPR131\Assignment11\Assignment11\main.cpp(88,18): message : see reference to class template instantiation 'MaxHeap<int>' being compiled
-C:\Users\thanh\OneDrive - Rancho Santiago Community College District\Desktop\CMPR131\Assignment11\Assignment11\MinHeap.cpp(27,18): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\thanh\OneDrive - Rancho Santiago Community College District\Desktop\CMPR131\Assignment11\Assignment11\MinHeap.cpp(26,1): message : while compiling class template member function 'int MinHeap<int>::getSize(void)'
-C:\Users\thanh\OneDrive - Rancho Santiago Community College District\Desktop\CMPR131\Assignment11\Assignment11\main.cpp(209,68): message : see the first reference to 'MinHeap<int>::getSize' in 'Min_Heap'
-C:\Users\thanh\OneDrive - Rancho Santiago Community College District\Desktop\CMPR131\Assignment11\Assignment11\main.cpp(186,18): message : see reference to class template instantiation 'MinHeap<int>' being compiled
+﻿  Heap.cpp
   Assignment11.vcxproj -> C:\Users\thanh\OneDrive - Rancho Santiago Community College District\Desktop\CMPR131\Assignment11\x64\Debug\Assignment11.exe

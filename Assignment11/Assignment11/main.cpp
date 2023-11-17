@@ -10,6 +10,9 @@
 #include <vector>
 #include "MaxHeap.cpp"
 #include "MinHeap.cpp"
+#include "Heap.cpp"
+#include <random>
+#include <algorithm>
 
 using namespace std;
 
@@ -19,7 +22,7 @@ void Max_Heap();
 void Min_Heap();
 
 void Option2();
-//void Option3();
+void Option3();
 
 int main()
 {
@@ -41,9 +44,8 @@ int main()
         case 0: exit(1); break;
         case 1: system("cls"); Option1(); break;
         case 2: system("cls"); Option2(); break;
-        //case 3: system("cls"); Option3(); break;
- 
-        default: cout << "\t\tERROR - Invalid option."; break;
+        case 3: system("cls"); Option3(); break;
+        default: cout << "\n\t\t\tERROR - Invalid option.\n"; break;
         }
         cout << "\n";
         system("pause");
@@ -73,7 +75,7 @@ void Option1()
         case '0': return;
         case 'A': system("cls"); Min_Heap(); break;
         case 'B': system("cls"); Max_Heap(); break;
-        default: cout << "\t\t\tERROR - Invalid option."; break;
+        default: cout << "\n\t\t\tERROR - Invalid option.\n"; break;
         }
         cout << "\n";
         system("pause");
@@ -171,7 +173,7 @@ void Max_Heap()
             }
             break;
 
-        default: cout << "\t\t\tERROR - Invalid option."; break;
+        default: cout << "\n\t\t\tERROR - Invalid option.\n"; break;
         }
         cout << "\n";
         system("pause");
@@ -269,7 +271,7 @@ void Min_Heap()
         }
         break;
 
-        default: cout << "\t\t\tERROR - Invalid option."; break;
+        default: cout << "\n\t\t\tERROR - Invalid option.\n"; break;
         }
         cout << "\n";
         system("pause");
@@ -277,7 +279,7 @@ void Min_Heap()
 }
 
 //Precondition: NA
-//Postcondition: Display Option 1 menu
+//Postcondition: Display Option 2 menu
 void Option2()
 {
 
@@ -444,9 +446,18 @@ void Option2()
                 }
             }
             break;
-            default: cout << "\t\t\tERROR - Invalid option."; break;
+            default: cout << "\n\t\t\tERROR - Invalid option.\n"; break;
         }
         cout << "\n";
         system("pause");
     } while (true);
+}
+
+//Precondition: NA
+//Postcondition: Display Option 3 menu
+void Option3()
+{
+    Heap<int> temp;
+
+    temp.menu();  
 }

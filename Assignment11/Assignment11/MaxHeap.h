@@ -1,5 +1,4 @@
 #pragma once
-#include "MaxHeap.h"
 #include <vector>
 #include <algorithm>
 #include <iostream>
@@ -26,6 +25,9 @@ public:
 	void pushHeap(const T &value);
 	void display();
 	bool search(const T &Item);
+
+	void sort();
+	bool isHeap(const vector<T>& array);
 
 	bool operator<(MaxHeap<T> obj);
 };
