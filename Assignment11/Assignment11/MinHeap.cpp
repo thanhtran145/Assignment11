@@ -59,6 +59,7 @@ void MinHeap<Item>::popHeap()
 {
 	pop_heap(Heap.begin(), Heap.end());
 	Heap.pop_back();
+	make_heap(Heap.begin(), Heap.end(), greater<Item>());
 }
 
 //Precondition: the heap has to be not empty
