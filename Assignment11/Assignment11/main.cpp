@@ -128,7 +128,18 @@ void Max_Heap()
             
             case 3:
             {
-                heap.pushHeap(inputInteger("\n\t\t\tEnter an integer element to push onto the heap: "));
+                do
+                {
+                    int input = inputInteger("\n\t\t\tEnter an integer element to push onto the heap : ");
+
+                    if (heap.search(input) == false)
+                    {
+                        heap.pushHeap(input);
+                        break;
+                    }
+                    else
+                        cout << "\t\t\tERROR: the element, " << input << ", already existed in the heap.Please re - specify.\n";
+                } while (true);
             }
             break;
 
@@ -226,7 +237,18 @@ void Min_Heap()
 
         case 3:
         {
-            heap.pushHeap(inputInteger("\n\t\t\tEnter an integer element to push onto the heap: "));
+            do
+            {
+                int input = inputInteger("\n\t\t\tEnter an integer element to push onto the heap : ");
+
+                if (heap.search(input) == false)
+                {
+                    heap.pushHeap(input);
+                    break;
+                }
+                else
+                    cout << "\t\t\tERROR: the element, " << input << ", already existed in the heap.Please re - specify.\n";
+            } while (true);
         }
         break;
 
